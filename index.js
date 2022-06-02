@@ -26,8 +26,13 @@ let panjangArray = dataBelanjaan.length;
 const listBelanjaan = () => {
   const hasil = [];
   for (let i = 0; i < panjangArray; i++) {
-    const listHasil = "- ";
-    dataBelanjaan[i].nama + " " + "x" + " " + dataBelanjaan[i].kuantitas;
+    const listHasil =
+      "- " +
+      dataBelanjaan[i].nama +
+      " " +
+      "x" +
+      " " +
+      dataBelanjaan[i].kuantitas;
     hasil.push(listHasil);
   }
   return hasil;
