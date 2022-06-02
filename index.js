@@ -22,15 +22,10 @@ const dataBelanjaan = [
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const listBelanjaan = () => {
-  const hasil = [];
+  let hasil = [];
   for (let i = 0; i < dataBelanjaan.length; i++) {
     const listHasil =
-      "- " +
-      dataBelanjaan[i].nama +
-      " " +
-      "x" +
-      " " +
-      dataBelanjaan[i].kuantitas;
+      "- " + dataBelanjaan[i].nama + " x " + dataBelanjaan[i].kuantitas;
     hasil.push(listHasil);
   }
   return hasil;
